@@ -1,285 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinmaya Das | Portfolio</title>
 
-    <title>Chinmaya Das | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-
 <body>
 
+<!-- Ambient glow orbs used for the glassmorphism effect -->
+<div class="bg-orb orb-1"></div>
+<div class="bg-orb orb-2"></div>
+<div class="bg-orb orb-3"></div>
+
 <!-- ================= NAVBAR ================= -->
-
 <header>
-
-<nav class="navbar">
-
-    <h2 class="logo">Chinmaya.</h2>
+<nav class="navbar glass">
+    <h2 class="logo">Chinmaya Das<span>.</span></h2>
 
     <ul class="nav-links">
-
         <li><a href="#home">Home</a></li>
-
         <li><a href="#about">About</a></li>
-
         <li><a href="#skills">Skills</a></li>
-
         <li><a href="#projects">Projects</a></li>
-
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
-
     </ul>
 
+    <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+    </div>
 </nav>
-
 </header>
 
 <!-- ================= HERO ================= -->
-
 <section class="hero" id="home">
 
-<div class="hero-text">
+    <div class="hero-text" data-reveal>
+        <h4>👋 Hello, I'm</h4>
+        <h1>Chinmaya Das</h1>
+        <h3><span id="typing"></span><span class="cursor">|</span></h3>
+        <p>
+            Passionate about building scalable web applications,
+            enterprise solutions, and solving real-world problems through technology.
+        </p>
 
-<h4>👋 Hello, I'm</h4>
+        <div class="buttons">
+            <a href="assets/resume.pdf" download class="btn">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn2">
+                <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+        </div>
 
-<h1>Chinmaya Das</h1>
+        <div class="social-icons">
+            <a href="https://github.com/chinmay76-ui" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chinmaya-das-2a226a2b3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:daschinmaya610@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
 
-<h3><span id="typing"></span></h3>
+    <div class="hero-image" data-reveal>
+        <div class="hero-ring"></div>
+        <img src="assets/profile.jpg" alt="Chinmaya Das">
+    </div>
 
-<p>
-Passionate about building scalable web applications,
-enterprise solutions, and solving real-world problems through technology.
-</p>
-
-<div class="buttons">
-
-<i class="fa-solid fa-download"></i> Download Resume
-
-<i class="fa-solid fa-paper-plane"></i> Contact Me
-
-</div>
-<div class="social-icons">
-
-<a href="#"><i class="fab fa-github"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="assets/profile.jpg" alt="Profile">
-
-</div>
-
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
 </section>
+
 <!-- ================= ABOUT ================= -->
-
 <section class="about" id="about">
-
-    <div class="section-title">
+    <div class="section-title" data-reveal>
+        <span class="eyebrow">Introduction</span>
         <h2>About Me</h2>
         <p>Get to know me</p>
     </div>
 
     <div class="about-container">
 
-        <div class="about-image">
-            <img src="assets/profile.jpg" alt="Profile">
+        <div class="about-image" data-reveal>
+            <img src="assets/profile.jpg" alt="Chinmaya Das">
         </div>
 
-        <div class="about-content">
-
+        <div class="about-content glass" data-reveal>
             <h3>Who am I?</h3>
-
             <p>
                 I'm <strong>Chinmaya Das</strong>, a passionate Computer Science
                 student with a strong interest in Web Development,
-                Java, Spring Boot and SAP ABAP.
-
-                I enjoy building modern applications that solve real-world
-                problems while continuously learning new technologies.
+                Java, Spring Boot and SAP ABAP. I enjoy building modern
+                applications that solve real-world problems while
+                continuously learning new technologies.
             </p>
 
             <div class="about-info">
-
                 <div>
                     <span>Name</span>
                     <p>Chinmaya Das</p>
                 </div>
-
                 <div>
                     <span>Email</span>
-                    <p>daschinmaya610@email.com</p>
+                    <p>daschinmaya610@gmail.com</p>
                 </div>
-
+                <div>
+                    <span>Phone</span>
+                    <p>+91 9337738523</p>
+                </div>
                 <div>
                     <span>Location</span>
                     <p>Odisha, India</p>
                 </div>
-
-                <div>
-                    <span>Degree</span>
-                    <p>B.Tech CSE</p>
-                </div>
-
             </div>
-
         </div>
 
     </div>
-
-</section>
-<!-- ================= EDUCATION ================= -->
-
-<section class="education" id="education">
-
-    <div class="section-title">
-        <h2>Education</h2>
-        <p>My Academic Journey</p>
-    </div>
-
-    <div class="education-container">
-
-        <div class="education-card">
-
-            <h3>Bachelor of Technology</h3>
-
-            <h4>Computer Science & Engineering</h4>
-
-            <p class="college">
-                Centurion University of Technology and Management
-            </p>
-
-            <span class="year">
-                2022 - 2026
-            </span>
-
-            <p>
-                Pursuing B.Tech with a focus on Java,
-                Spring Boot, Web Development,
-                Database Management Systems,
-                and SAP ABAP.
-            </p>
-
-        </div>
-
-    </div>
-
 </section>
 
 <!-- ================= SKILLS ================= -->
-
 <section class="skills" id="skills">
-
-    <div class="section-title">
+    <div class="section-title" data-reveal>
+        <span class="eyebrow">Toolbox</span>
         <h2>Skills</h2>
-        <p>Technologies I Work With</p>
+        <p>Technologies I work with</p>
     </div>
 
     <div class="skills-container">
-
-        <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
-            <h3>Java</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-leaf"></i>
-            <h3>Spring Boot</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <h3>HTML5</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <h3>CSS3</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <h3>JavaScript</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-angular"></i>
-            <h3>Angular</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <h3>MySQL</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <h3>Git</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
-            <h3>GitHub</h3>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>SAP ABAP</h3>
-        </div>
-
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-java"></i><h3>Java</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-leaf"></i><h3>Spring Boot</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-c"></i><h3>C</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-angular"></i><h3>Angular</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-node-js"></i><h3>Node.js</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-database"></i><h3>MySQL</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-leaf"></i><h3>MongoDB</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-cloud"></i><h3>SAP ABAP</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-git-alt"></i><h3>Git</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-brands fa-github"></i><h3>GitHub</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-code"></i><h3>VS Code</h3></div>
+        <div class="skill-card glass" data-reveal><i class="fa-solid fa-satellite-dish"></i><h3>Postman</h3></div>
     </div>
-
 </section>
-<!-- ================= CERTIFICATIONS ================= -->
 
-<section class="certifications" id="certifications">
-
-    <div class="section-title">
-        <h2>Certifications</h2>
-        <p>Courses & Achievements</p>
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+    <div class="section-title" data-reveal>
+        <span class="eyebrow">Work</span>
+        <h2>Projects</h2>
+        <p>A few things I've built</p>
     </div>
 
-    <div class="certificate-container">
+    <div class="projects-container">
 
-        <div class="certificate-card">
-
-            <i class="fa-solid fa-award"></i>
-
-            <h3>SAP ABAP Cloud Backend Developer</h3>
-
-            <p>SAP Learning</p>
-
+        <div class="project-card glass" data-reveal>
+            <div class="project-image" data-lightbox="assets/project1.png">
+                <img src="assets/project1.png" class="img-blur" alt="" aria-hidden="true">
+                <img src="assets/project1.png" class="img-main" alt="Library Management System">
+                <span class="expand-hint"><i class="fa-solid fa-expand"></i></span>
+            </div>
+            <div class="project-body">
+                <h3>Library Management System</h3>
+                <p class="stack">Spring Boot · Angular · MySQL</p>
+                <p>Full-stack library management system to manage books, users and borrow/return operations, with RESTful APIs, CRUD functionality and user authentication.</p>
+                <div class="project-tags">
+                    <span>REST API</span><span>Authentication</span><span>CRUD</span>
+                </div>
+            </div>
         </div>
 
-        <div class="certificate-card">
+        <div class="project-card glass" data-reveal>
+            <div class="project-image" data-lightbox="assets/project2.png">
+                <img src="assets/project2.png" class="img-blur" alt="" aria-hidden="true">
+                <img src="assets/project2.png" class="img-main" alt="Hostel Management System">
+                <span class="expand-hint"><i class="fa-solid fa-expand"></i></span>
+            </div>
+            <div class="project-body">
+                <h3>Hostel Management System</h3>
+                <p class="stack">Advanced Java · JSP · MySQL</p>
+                <p>Web-based hostel management system to manage student records, room allocation and hostel information with a user-friendly admin interface.</p>
+                <div class="project-tags">
+                    <span>JSP</span><span>MySQL</span><span>CRUD</span>
+                </div>
+            </div>
+        </div>
 
-            <i class="fa-solid fa-laptop-code"></i>
-
-            <h3>Web Development Internship</h3>
-
-            <p>CodSoft</p>
-
+        <div class="project-card glass" data-reveal>
+            <div class="project-image" data-lightbox="assets/project3.png">
+                <img src="assets/project3.png" class="img-blur" alt="" aria-hidden="true">
+                <img src="assets/project3.png" class="img-main" alt="News App">
+                <span class="expand-hint"><i class="fa-solid fa-expand"></i></span>
+            </div>
+            <div class="project-body">
+                <h3>News App</h3>
+                <p class="stack">Kotlin · XML · News API</p>
+                <p>Android news application fetching real-time articles via Retrofit, with a clean, responsive UI and category-based browsing.</p>
+                <div class="project-tags">
+                    <span>Android</span><span>Retrofit</span><span>REST API</span>
+                </div>
+            </div>
         </div>
 
     </div>
-
 </section>
+
+<!-- ================= RESUME ================= -->
+<section class="resume" id="resume">
+    <div class="resume-card glass" data-reveal>
+        <div>
+            <h2>Want the full picture?</h2>
+            <p>Download my resume for a complete overview of my education, skills and experience.</p>
+        </div>
+        <a href="assets/resume.pdf" download class="btn">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+        </a>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <div class="section-title" data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <h2>Contact Me</h2>
+        <p>Let's build something together</p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info glass" data-reveal>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:daschinmaya610@gmail.com">daschinmaya610@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <span>Phone</span>
+                    <a href="tel:+919337738523">+91 9337738523</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                    <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/chinmaya-das-2a226a2b3/" target="_blank">chinmaya-das</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                    <span>GitHub</span>
+                    <a href="https://github.com/chinmay76-ui" target="_blank">chinmay76-ui</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form glass" data-reveal id="contactForm">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" placeholder="Subject" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-content">
+        <h2 class="logo">Chinmaya<span>.</span></h2>
+
+        <div class="social-icons">
+            <a href="https://github.com/chinmay76-ui" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chinmaya-das-2a226a2b3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:daschinmaya610@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <p class="footer-bottom">&copy; <span id="year"></span> Chinmaya Das. All rights reserved.</p>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="Project preview" id="lightboxImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
